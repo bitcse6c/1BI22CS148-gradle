@@ -25,7 +25,14 @@ pipeline{
         sh 'gradle run'
       }
     }
-    post{
-      succes
+    post{	
+		success{
+			echo "Successfull"
+		}
+		failure{
+			echo "Unsuccessfull"
+		}
+	}
+}
         
       
